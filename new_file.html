@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>开关灯</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#contain1{
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				/* justify-content: center; */
+				background-color: #111f3d;
+			}
+			#contain1 header{
+				font: 600 36px "思源雅黑" ;
+				padding-top: 50px;
+				text-align: center;
+				color: #ff7626;
+			}
+			#contain1 img{
+				width: 60%;
+			}
+			#contain1 button{
+				width: 220px;
+				height: 50px;
+				border-radius: 15px;
+				background-color: #111f3d;
+				border: 2px solid #ff7626;
+				font: 14px "思源雅黑" ;
+				color: #fff;
+				
+			}
+			#contain1 button:hover{
+				
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function openlight(){
+				var ele;
+				ele=document.getElementById('imgg');
+				if(ele.src.match("deng1")){
+					ele.src="./img/deng2.png"
+				}
+				else{
+					ele.src="./img/deng1.png"
+				}
+			}
+		</script>
+		<div id="contain1">
+			<header>TURN ON THE LIGHT</header>
+			<img src="./img/deng1.png" alt="light" id="imgg">
+			<button class="btn-15" onclick="openlight()">open</button>
+		</div>
+	</body>
+</html>
